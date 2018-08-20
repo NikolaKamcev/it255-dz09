@@ -1,0 +1,88 @@
+
+
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+          <a class="nav-link" routerLink="/pocetna" routerLinkActive="active">
+          <i class="fa fa-home"></i>
+          Home
+          <span class="sr-only">(current)</span>
+          </a>
+      </li>
+
+      <li class="nav-item">
+          <a class="nav-link" routerLink="/onama">
+          <i class="fa fa-question-circle-o">
+          </i>
+          O nama
+        </a>
+      </li>
+
+
+      <li class="nav-item" *ngIf='!isAuth'>
+          <a class="nav-link" routerLink="login">
+            <i class="fa fa-sign-in">
+            </i>
+            Log In
+          </a>
+        </li>
+
+        <li class="nav-item" *ngIf='!isAuth'>
+            <a class="nav-link " routerLink="registration">
+              <i class="fa fa-registered">
+              </i>
+              Registration
+            </a>
+          </li>
+
+
+
+        <li class="nav-item" *ngIf='isAuth'>
+          <a class="nav-link "(click)="logOut()">
+            <i class="fa fa-registered">
+            </i>
+            Logout
+          </a>
+        </li>
+    </ul>
+    
+    <!-- da se vidi samo ko je ulogovan ! *ngIf='{{ime.username}}'  -->
+
+    <form class="form-inline my-2 my-lg-0">
+        <font color="white">Welcome : {{ime.username}}
+        </font>
+    </form>
+    
+  </div>
+</nav>
+
+<section id="lab_social_icon_footer">
+  <!-- Include Font Awesome Stylesheet in Header -->
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <div class="container">
+          <div class="text-center center-block">
+                <a href="https://www.facebook.com"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+                <a href="https://twitter.com"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+                <a href="https://plus.google.com"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+                <a href="mailto:#"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+      </div>
+  </div>
+  </section>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+
+

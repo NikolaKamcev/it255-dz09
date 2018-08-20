@@ -1,0 +1,46 @@
+<!-- <form role="form" [formGroup]="registerForm">
+  <div class="alert alert-danger" style="display: none;">
+
+  </div>
+ <div class="form-group">
+    <label for="firstName">First name:</label>
+    <input type="text" class="form-control" formControlName='firstName'>
+  </div>
+   <div class="form-group">
+    <label for="lastName">Last name:</label>
+    <input type="text" class="form-control"  formControlName='lastName'>
+  </div>
+  <div class="form-group">
+    <label for="username">Username:</label>
+    <input type="text" class="form-control"  formControlName='username'>
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" formControlName='password'>
+  </div>
+  <button (click)="register()" class="btn btn-default">Register</button>
+</form>
+-->
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+    <h2 class="active"> Sign Up </h2>
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <img src="http://danielzawadzki.com/codepen/01/icon.svg" id="icon" alt="User Icon" />
+    </div>
+
+    <!-- Login Form -->
+    <form role="form" [formGroup]="registerForm">
+
+        <input type="text" id="login" class="fadeIn second"  placeholder="First Name" formControlName='firstName'>
+        <input type="text" id="password" class="fadeIn third" placeholder="Last Name" formControlName='lastName'>
+      <input type="text" id="login" class="fadeIn second"  placeholder="Username" formControlName='username'>
+      <input type="text" id="password" class="fadeIn third" placeholder="password" formControlName='password'>
+      <input type="submit" (click)="register()" class="fadeIn fourth" value="Log In">
+    </form>
+
+  </div>
+</div>
