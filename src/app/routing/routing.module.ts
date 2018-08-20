@@ -7,6 +7,8 @@ import { PocetnaComponent } from '../pocetna/pocetna.component';
 import { OnamaComponent } from '../onama/onama.component';
 import { LoginComponent } from '../login/login.component';
 import { RegistrationComponent } from '../registration/registration.component';
+import { AddroomComponent } from '../addroom/addroom.component';
+import { AddhotelComponent } from '../addhotel/addhotel.component';
 
 const routes: Routes = [
   {
@@ -29,6 +31,14 @@ const routes: Routes = [
   {
     path: 'onama',
     component: OnamaComponent,
+  },
+  {
+    path: 'addroom',
+    component: AddroomComponent,
+  },
+  {
+    path: 'addhotel',
+    component: AddhotelComponent,
   },
 
 ];

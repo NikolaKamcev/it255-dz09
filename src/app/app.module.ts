@@ -8,6 +8,8 @@ import { PocetnaComponent } from './pocetna/pocetna.component';
 import { OnamaComponent } from './onama/onama.component';
 import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { AddroomComponent } from './addroom/addroom.component';
+import { AddhotelComponent } from './addhotel/addhotel.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { RegistrationComponent } from './registration/registration.component';
     PocetnaComponent,
     OnamaComponent,
     LoginComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    AddroomComponent,
+    AddhotelComponent
   ],
   imports: [
     BrowserModule,

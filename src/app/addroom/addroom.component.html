@@ -1,0 +1,15 @@
+<form role="form" [formGroup]="addRoomForm">
+  <div class="form-group">
+     <label for="roomName">Room name:</label>
+     <input type="text" class="form-control" formControlName='roomname'>
+   </div>
+    <div class="form-group">
+      <label for="roomName">TV:</label>
+      <input type="text" class="form-control" formControlName='tv'>
+   </div>
+   <div class="form-group">
+    <label for="roomName">Beds:</label>
+    <input type="text" class="form-control" formControlName='beds'>
+   </div>
+   <button (click)="addRoom()" class="btn btn-default">Add room</button>
+ </form>

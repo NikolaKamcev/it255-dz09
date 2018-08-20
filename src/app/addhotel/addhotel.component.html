@@ -1,0 +1,15 @@
+<form role="form" [formGroup]="addHotelForm">
+  <div class="form-group">
+     <label for="roomName">Hotel name:</label>
+     <input type="text" class="form-control" formControlName='hotelname'>
+   </div>
+    <div class="form-group">
+      <label for="roomName">Adress:</label>
+      <input type="text" class="form-control" formControlName='adress'>
+   </div>
+   <div class="form-group">
+    <label for="roomName">Telephone:</label>
+    <input type="text" class="form-control" formControlName='telephone'>
+   </div>
+   <button (click)="addHotel()" class="btn btn-default">Add hotel</button>
+ </form>
